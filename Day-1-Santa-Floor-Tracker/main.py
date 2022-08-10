@@ -8,5 +8,8 @@ for x in range(0, len(string_input)):
     elif string_input[x] == ")":
         floor -= 1
     
+    if floor == -1:
+        print(f"Pos: {x+1}, Character: {string_input[x]}")
+        break
+    
 print(floor)
-print(len(string_input))
